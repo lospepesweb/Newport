@@ -1,0 +1,62 @@
+/*COLORES
+*	nav:hover y bg footer: rgb(200,194,146)
+*	h1 y nav: rgb(110,130,93)
+*/
+.header {
+	font-family: robotoLight;
+
+	background: linear-gradient(to left, rgb(200,194,96), rgb(110,130,93));
+
+	clear: both;
+	width: 100%;
+}
+	.header h1 { 
+		letter-spacing: 3px;
+		color: rgb(228,246,200);
+
+		padding: 1% 0 1% 5%;
+
+	}
+
+section.nosotros {
+	font-family: robotoLight;
+	margin:2% 5%;
+	width: 50%;
+	float: left;
+	min-height: 300px;
+}
+	section.nosotros p {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		margin-bottom: 2%;
+	}
+	section.nosotros p:first-child {
+		text-indent: 10px;
+	}
+	section.nosotros h1 {
+		font-size: 1.8rem;
+		color: rgb(110,130,93);
+	}
+
+aside {
+	font-family: robotoLight;
+	text-align: center;
+	margin:2% 5%;
+}
+	aside a.single-image {
+		font-size: 1.5rem;
+		text-decoration: none;
+		background-color: rgb(117,150,30);
+		overflow: hidden;
+		display: block;
+		border-radius: 5px;
+		width: 10%;
+		margin-top: 4%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5% 0;
+
+	}
+	aside a.single-image:link, a.single-image:visited {
+		color: #fff;
+	}

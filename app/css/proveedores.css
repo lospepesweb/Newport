@@ -1,0 +1,23 @@
+.container {
+	padding-top: 35px;
+	margin-left: 110px;
+}
+.proveedores {
+	background-color: #fff;
+	border: 1px solid #B0B0B0;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+	margin: 2%;
+	padding: 2%;
+	width: 96%;
+	height: 280px;
+	float: left;
+}
+.proveedores h1 {
+	font-size: 2rem;
+}
+
+.ltb_proveedores {
+	width: 60%;
+	float: left;
+}

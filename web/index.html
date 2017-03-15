@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Newport Empresas SRL</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+    <style type="text/css">
+        nav ul li:nth-child(1) {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<p><img src="img/marca.svg" alt="Ups! Parece que la versión de tu navegador no es la mas actual."/></p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="html/nosotros.html">Nosotros</a></li>
+			<li><a href="html/productos.html">Productos</a></li>
+			<li><a href="html/contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<section class="index">
+		<div class="slides">
+			<img src="img/28-desarrolloSustentable.jpg">
+			<img src="img/29-procesosCalidad.jpg">
+		</div>
+	</section>
+	<div class="columna1">
+		<div class="primero">
+			<h1>Responsabilidad</h1>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+		</div>
+		<div class="segundo">
+			<h1>Nosotros</h1>
+			<p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+			<a href="html/nosotros.html">Leer más</a>
+		</div>
+	</div>
+	<div class="columna2">
+		<h1>Pensamos en el futuro</h1>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+		<img src="img/8.jpg">
+	</div>
+	<script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+	<script src="js/jquery.slides.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+		  $(".slides").slidesjs({
+		    play: {
+		      active: false,
+		      effect: "slide",
+		      interval: 3000,
+		      auto: true,
+		      swap: true,
+		      pauseOnHover: false,
+		      restartDelay: 2500
+		    }
+		  });
+		});
+  	</script>
+	<footer>
+		<p>2017 Newport Empresas SRL. All right reserved.
+	</footer>
+</body>
+</html>

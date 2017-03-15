@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilos-nav-nuevo.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/compras.css">
+	<link rel="stylesheet" href="../fonts/style.css">
+	<script type="text/javascript" src="../js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/operaciones1.js"></script>
+	<title>Newport Empresas SRL</title>
+</head>
+<body>
+	<header class="nav">
+		<p class="titulo"><img src="../img/marca.png"></p>
+		<a class="salir" href="../login.html">SALIR<span class="icon-log-out"></span></a>
+	</header>
+	<nav class="botonera">
+		<ul class="menu">
+			<li class="submenu"><a href="home.html"><span class="icon-home"></span>Home</a>
+			</li>
+			<li class="submenu"><a href="#"><span class="icon-shopping-cart"></span>Compras</a>
+				<ul class="children">
+					<li><a href="compras.html">Cargar</a></li>
+					<li><a href="#" class="informes">Informes por fecha</a></li>
+					<li><a href="#">Libro IVA Compras</a></li>
+					<li><a href="proveedores.html" class="proveedores">Proveedores</a></li>
+				</ul>
+			</li>
+			<li class="submenu"><a href="#"><span class="icon-users"></span>Usuarios</a>
+				<ul class="children">
+					<li><a href="#">Contraseña</a></li>
+					<li><a href="#" class="AB">Alta</a></li>
+					<li><a href="#">Baja</a></li>
+					<li><a href="#" class="permisos">Permisos</a></li>
+				</ul>
+			</li>
+		<ul/>
+	</nav>
+	<section>
+		<form class="form-cargaComprobantes">
+			<h1>Carga de Compras</h1>
+			<div id="encabezado">
+				<div class="grupoProveedor">
+				<h2><em>P</em>roveedor</h2>
+				<select id="proveedor" name="proveedor">
+					<option>Proveedor1</option>
+					<option>Proveedor2</option>
+					<option>Proveedor3</option>
+				</select>
+				</div>
+				<h2><em>F</em>echa</h2>
+				<input id="fecha" type="date" name="Fecha">
+				<h2><em>C</em>omprobante</h2>
+				<select id="comprobante">
+					<option>Factura</option>
+					<option>Nota de Crédito</option>
+					<option>Nota de Débito</option>
+					<option>Liquidación</option>
+					<option>Otros</option>
+				</select>
+				<select id="tipo">
+					<option>A</option>
+					<option>B</option>
+					<option>C</option>
+					<option>X</option>
+				</select>
+				<h2><em>P</em>unto de Venta</h2>
+				<input id="ptoVenta" type="text" name="puntoVenta">
+				<h2><em>N</em>úmero</h2>
+				<input id="numero" type="text" name="Numero">
+			</div>
+			<div id="columna2">
+				<div id="grupo1">
+					<h2><em>E</em>mpresa</h2>
+						<select id="empresa">
+							<option>CAPE Empresas SRL</option>
+							<option>DKN Argentina SRL</option>
+							<option>DKN Servicios SRL</option>
+							<option>Fortaleza Empresas SRL</option>
+							<option>Newport Empresas SRL</option>
+							<option>Vandalay Wordwide SRL</option>
+						</select>
+					<h2><em>P</em>roducto</h2>
+						<select id="producto">
+							<option>Producto1</option>
+							<option>Producto2</option>
+							<option>Producto3</option>
+						</select>
+					<h2><em>F</em>inca</h2>
+						<select id="finca">
+							<option>Finca1</option>
+							<option>Finca2</option>
+							<option>Finca3</option>
+						</select>
+					<h2><em>M</em>es imputación</h2>
+						<input id="mesImput" type="month" name="mesImput" >
+				</div>
+				<div id="grupo2">
+					<h2><em>G</em>asto de extracción</h2>
+						<input id="extracion" type="checkbox" name="Extraccion">
+						<textarea id="comentarios" placeholder="Comentarios"></textarea>
+				</div>
+			</div>
+			<div id="netos">
+					<div id="neto1050">
+						<h2><em>N</em>eto 10,50%</h2>
+						<!-- <input class="caja" type="text" value="0" id="cajaneto1050" onBlur="validaNeto1050()"> -->
+						<input class="caja" type="text" value= "0" id="cajaneto1050" onBlur="validaNeto1050()">
+					</div>
+					<div id="neto21">
+						<h2><em>N</em>eto 21%</h2>					
+						<input class="caja" type="text" value="0" id="cajaneto21"  onBlur="validaNeto21()">
+					</div>
+					<div id="neto27">
+						<h2><em>N</em>eto 27%</h2>
+						<input class="caja" type="text" value="0" id="cajaneto27" onBlur="validaNeto27()">
+					</div>
+					<div id="exento">
+						<h2><em>E</em>xento</h2>
+						<input class="caja" type="text" value="0" id="cajaexento" onBlur="validaexento()">
+					</div>
+			</div>
+			<div id="alicuotas">
+					<div id="iva1050">
+						<h2><em>I</em>VA 10,50%</h2>
+						<input class="caja" type="text" value="0" id="cajaiva1050" onBlur="validaiva1050()">
+					</div>
+					<div id="iva21">
+						<h2><em>I</em>VA 21%</h2>					
+						<input class="caja" type="text" value="0" id="cajaiva21" onBlur="validaiva21()">
+					</div>
+					<div id="iva27">
+						<h2><em>I</em>VA 27%</h2>
+						<input class="caja" type="text" value="0" id="cajaiva27" onBlur="validaiva27()">
+					</div>
+			</div>
+			<div id="retenciones">
+					<div id="retIVA">
+						<h2><em>R</em>etención IVA</h2>
+						<input class="caja" type="text" value="0" id="cajaretIVA" onBlur="validaretIVA()">
+					</div>
+					<div id="retGcias">
+						<h2><em>R</em>etención Ganancias</h2>					
+						<input class="caja" type="text" value="0" id="cajaretGcias" onBlur="validaretGcias()">
+					</div>
+					<div id="retIB">
+						<h2><em>R</em>etención Ingresos Brutos</h2>
+						<input class="caja" type="text" value="0" id="cajaretIB" onBlur="validaretIB()">
+					</div>
+			</div>
+			<div id="total">
+				<h1>TOTAL</h1>
+				<input class="caja" type="text" id="cajatotal" readonly="true">
+				<input class="caja" type="button" id="cargar" value="Cargar" onclick="msj()">
+
+			</div>
+		</form>
+	</section>
+</body>
+</html>

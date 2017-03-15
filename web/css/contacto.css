@@ -1,0 +1,42 @@
+/*COLORES
+*	nav:hover y bg footer: rgb(200,194,146)
+*	h1 y nav: rgb(110,130,93)
+*/
+
+.header {
+	font-family: robotoLight;
+
+	background: linear-gradient(to left, rgb(200,194,96), rgb(110,130,93));
+
+	clear: both;
+	width: 100%;
+}
+	.header h1 { 
+		letter-spacing: 3px;
+		color: rgb(228,246,200);
+
+		padding: 1% 0 1% 5%;
+
+	}
+
+section.contacto {
+	font-family: robotoLight;
+	margin:2% 5%;
+	height: 400px;
+}
+	section.contacto p {
+		font-size: 1.3rem;
+		line-height: 2rem;
+		margin-bottom: 2%;
+	}
+	section.contacto h1 {
+		font-size: 1.8rem;
+		color: rgb(110,130,93);
+	}
+
+@media screen and (min-width: 1500px) {
+
+	section.contacto {
+		height: 500px;
+	}
+}

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Newport Empresas SRL</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta title="Newport Empresas SRL">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/nosotros.css">
+	<link rel="stylesheet" type="text/css" href="../css/font.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="../fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="../fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	   <style type="text/css">
+        nav ul li:nth-child(2) {
+            font-weight:bold;
+        }
+    </style>
+	<script>
+			$(function(){
+				$(".single-image").fancybox({
+					openEffect : 'elastic',   //'fade', 'elastic'
+			    	closeEffect	: 'elastic',
+			    	openSpeed:'normal', //ms, slow, normal, fast (default 250ms)
+			    	closeSpeed:'normal',
+			    	helpers : {
+			    		title : {
+			    			type : 'inside' //'float', 'inside', 'outside' or 'over'
+			    		},
+			    		overlay : {
+			    			closeClick : true  // if true, se cierra al hacer click fuera de la imagen
+	       			    }
+			    	},
+			    	padding:11
+				});
+			});
+	</script>
+</head>
+<body>
+	<header>
+		<p><img src="../img/marca.svg" alt="Ups! Parece que la versión de tu navegador no es la mas actual."/></p>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Inicio</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<div class="header">
+		<h1>Nosotros</h1>
+	</div>
+	<section class="nosotros">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+	</section>
+	<aside>
+		<a class="single-image" href="../img/mision.jpg">Misión</a><br>
+		<a class="single-image" href="../img/vision.jpg">Visión</a><br>
+		<a class="single-image" href="../img/valores.jpg">Valores</a><br>
+	</aside>
+	<footer>
+		<p>2017 Newport Empresas SRL. All right reserved.
+	</footer>
+</body>
+</html>
